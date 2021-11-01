@@ -1,0 +1,35 @@
+.flex-container {
+  display: flex;
+
+  .flex-child {
+    flex: 1;
+    margin-left: 5vw;
+  }
+
+  .card {
+    text-align: justify;
+    margin-top: 5vw;
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  @media screen and (max-width: 600px) {
+    .flex-child-first {
+      visibility: hidden;
+      display: none;
+      width: 100%;
+    }
+    .flex-child {
+      width: 100px;
+      .card {
+        margin-left: 10%;
+        width: 80%;
+        text-align: justify;
+        margin-top: 5vw;
+        padding: 2vw;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+    }
+  }
+}
